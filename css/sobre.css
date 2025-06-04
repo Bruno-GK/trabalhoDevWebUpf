@@ -1,0 +1,95 @@
+@font-face {
+  font-family: 'Starjedi';
+  src: url('../font/Starjedi.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: yellow;
+  font-family: 'Starjedi', sans-serif;
+  overflow: hidden;
+}
+
+/* Remoção dos pontos nas listas não ordenadas */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+/* Navegador */
+nav.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  z-index: 1000;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(8px);
+}
+nav.menu ul {
+  right: 20px;
+  display: flex;
+  gap: 30px;
+}
+nav.menu li {
+  cursor: pointer;
+  padding: 10px;
+  transition: background 0.3s;
+}
+nav.menu li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+nav.menu a{
+  color: #008cff;
+  text-decoration: none;
+}
+.logo p{
+  position: relative;
+  right: 400px;
+  bottom: 5px;
+  margin-right: -200px;
+  font-family: 'Starjedi', sans-serif;
+  font-size: 20px;
+  color: #ffd700;
+}
+
+.star-wars {
+  position: relative;
+  height: 100vh;
+  perspective: 700px;
+  overflow: hidden;
+}
+
+.crawl {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  transform-origin: 50% 100%;
+  animation: crawl 140s linear infinite;
+}
+
+.crawl-text {
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+  font-size: 2rem;
+  transform: rotateX(25deg);
+}
+
+@keyframes crawl {
+  0% {
+    top: 100%;
+    transform: rotateX(25deg) translateZ(0);
+  }
+  100% {
+    top: -500%;
+    transform: rotateX(25deg) translateZ(-1000px);
+  }
+}

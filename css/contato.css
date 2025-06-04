@@ -1,0 +1,155 @@
+/* Geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: url('../img/fundo/sky-night-star-milky-way-cosmos-atmosphere-651343-pxhere.com.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding-top: 60px;
+  color: #f0f0f0;
+}
+
+/* Fontes */
+@font-face {
+  font-family: 'Starjhol';
+  src: url('../font/Starjhol.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Starjedi';
+  src: url('../font/Starjedi.ttf') format('truetype');
+}
+
+/* Remoção dos pontos nas listas não ordenadas */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Navegador */
+nav.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  z-index: 1000;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(8px);
+}
+nav.menu ul {
+  right: 20px;
+  display: flex;
+  gap: 30px;
+}
+nav.menu li {
+  cursor: pointer;
+  padding: 10px;
+  transition: background 0.3s;
+}
+nav.menu li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+nav.menu a{
+  color: #008cff;
+  text-decoration: none;
+}
+.logo p{
+  position: relative;
+  right: 400px;
+  bottom: 5px;
+  margin-right: -200px;
+  font-family: 'Starjedi', sans-serif;
+  font-size: 20px;
+  color: #ffd700;
+}
+
+/* Seção de conteúdo centralizado */
+section.conteudo {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 140, 255, 0.3);
+  font-size: 16px;
+}
+section.conteudo h1 {
+  text-align: center;
+  font-family: 'Starjedi', sans-serif;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #ffd700;
+}
+
+/* Estilização dos inputs e textarea */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilização dos rótulos */
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-family: 'Starjhol', sans-serif;
+  color: #ffd700;
+}
+
+/* Botão estilizado */
+form button[type="submit"] {
+  background-color: #ffd700;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+form button[type="submit"]:hover {
+  background-color: #008cff;
+}
+
+/* Fotter */
+.footer {
+  text-align: center;
+  padding: 30px 20px;
+  color: #cccccc;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 14px;
+}
+.footer a {
+  color: #ffd700;
+  text-decoration: none;
+  margin: 0 8px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="../css/contato.css">
+  <link rel="shortcut icon" href="../img/imagemSistemaSolar.png" type="image/x-icon">
+  <title>Sistema Solar - Contato</title>
+</head>
+<body>
+  <!-- Navegador -->
+    <nav class="menu">
+            <div class="logo"><p>devweb</p></div>
+        <ul>
+            <li><a href="../html/planetas.html">Planetas</a></li>
+            <li><a href="../html/outros.html">Outros</a></li>
+            <li><a href="../html/sobre.html">Sobre</a></li>
+            <li class="atual">Contato</li>
+        </ul>
+    </nav>
+
+  <!-- Formulário de Contato -->
+  <section class="conteudo">
+    <h1>Contato</h1>
+    <form action="#" method="post">
+      <label for="nome">Nome:</label><br/>
+      <input type="text" id="nome" name="nome" required/><br/>
+
+      <label for="sobrenome">Sobrenome:</label><br/>
+      <input type="text" id="sobrenome" name="sobrenome" required/><br/>
+
+      <label for="email">Email:</label><br/>
+      <input type="email" id="email" name="email" required/><br/>
+
+      <label for="telefone">Telefone:</label><br/>
+      <input type="tel" id="telefone" name="telefone" /><br/>
+
+      <label for="planeta-favorito">Planeta favorito:</label><br />
+      <input type="text" id="planeta-favorito" name="planeta-favorito" /><br/>
+
+      <label for="sugestao">Sugestão:</label><br/>
+      <textarea id="sugestao" name="sugestao" rows="4"  cols="50" placeholder="Sugira um tema para o site"></textarea><br/>
+
+      <label for="opiniao">o que achou do site:</label><br/>
+      <textarea id="opiniao" name="opiniao" rows="4" cols="50"></textarea><br/>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+        <div class="container">
+            <p>©2025 Bruno Garbossa Kerkhoven. Todos os direitos reservados.</p>
+            <p>
+                <a href="https://github.com/Bruno-GK/trabalhoUpfDevWeb" target="_blank" rel="noopener noreferrer">GitHub</a> 
+            |
+                <a href="https://www.instagram.com/bruno_gk_/" target="_blank" rel="noopener noreferrer">Instagram</a> 
+            |
+                <a href="mailto:bruno2006gk@gmail.com">Contato</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
